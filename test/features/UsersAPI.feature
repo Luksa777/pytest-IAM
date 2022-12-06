@@ -2,7 +2,7 @@
 Feature: User api test
   Get / create / get by id / update user via API
 
-  Scenario: Account API flow
+  Scenario: User API flow
     Given I took auth token
     And I send "POST" api request to create user  #201
     And I send "GETbyID" api request to check if user is created  #200
@@ -10,7 +10,9 @@ Feature: User api test
     And I send "GET" api request to get all users
     And I should "GET" "200" response and validate if my user is in the list
     And I check if all updated parameters are correct
-    Then I delete exact user
+    Then I delete exact user              #this step is questionable
+
+
 
 
     #subaccount shouldbe checked
