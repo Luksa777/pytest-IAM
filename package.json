@@ -1,0 +1,7 @@
+{
+  "name": "pytest luka",
+  "version": "1.0.0",
+  "dependencies": {
+  },
+  "pytestrun": "pipenv run python -m pytest"
+}
